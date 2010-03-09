@@ -224,7 +224,7 @@ function gitTabExpansion($lastBlock) {
  
         #handles git checkout <branch name>
         #handles git merge <brancj name>
-        'git (checkhout|merge) (\S*)$' {
+        'git (checkout|merge) (\S*)$' {
           gitLocalBranches($matches[2])
         }
  
